@@ -15,6 +15,9 @@ struct Register2: View {
     var body: some View {
         ZStack {
             Color.bgMain.ignoresSafeArea()
+                .onTapGesture {
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:nil, from:nil, for:nil)
+                }
             
             VStack(spacing: 0) {
                 upperView
@@ -28,6 +31,9 @@ struct Register2: View {
     private var upperView: some View {
         ZStack {
             Color.bgMain
+                .onTapGesture {
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:nil, from:nil, for:nil)
+                }
             
             VStack(spacing: 38) {
                 RegisterImageView(imageData: $image)
@@ -41,7 +47,7 @@ struct Register2: View {
                     TextFieldCustom(text: $target, prefix: "Target", placeholder: "Enter")
                 }
             }
-            .padding(EdgeInsets(top: 148, leading: 16, bottom: 0, trailing: 16))
+            .padding(EdgeInsets(top: 80, leading: 16, bottom: 0, trailing: 16))
             .frame(maxHeight: .infinity, alignment: .top)
         }
     }

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct QuotesView: View {
     
+    @AppStorage("firstQ") var firstQ = true
     @EnvironmentObject var source: Source
     @State var selection = 0
     
@@ -12,9 +13,47 @@ struct QuotesView: View {
                 
                 VStack(spacing: 0) {
                     header
-                    content
+                    ZStack {
+                        content
+                        if firstQ {
+                            guideView
+                                .onTapGesture {
+                                    firstQ = false
+                                }
+                                .onAppear {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                        firstQ = false
+                                    }
+                                }
+                        }
+                    }
+                    
                 }
                 .frame(maxHeight: .infinity, alignment: .top)
+            }
+        }
+    }
+    
+    private var guideView: some View {
+        ZStack {
+            Color.black.opacity(0.5)
+            VStack(spacing: 12) {
+                HStack(spacing: 12) {
+                    Image(systemName: "arrow.left")
+                        .font(.system(size: 64, weight: .regular))
+                        .foregroundColor(.bgSecond)
+                    Image(systemName: "hand.draw")
+                        .font(.system(size: 64, weight: .regular))
+                        .foregroundColor(.bgSecond)
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 64, weight: .regular))
+                        .foregroundColor(.bgSecond)
+                }
+                
+                Text("Swipe left and right to\nwatch motivational\nposts")
+                    .font(.system(size: 34, weight: .bold))
+                    .foregroundColor(.bgSecond)
+                    .multilineTextAlignment(.center)
             }
         }
     }

@@ -22,9 +22,15 @@ final class Source: ObservableObject {
     
     @Published var motivates: Array<Motivate> = [
         Motivate(id: 0, favorite: false, image: "MotivateImage1", date: ""),
-        Motivate(id: 1, favorite: false, image: "MotivateImage1", date: ""),
-        Motivate(id: 2, favorite: false, image: "MotivateImage1", date: ""),
-        Motivate(id: 3, favorite: false, image: "MotivateImage1", date: "")
+        Motivate(id: 1, favorite: false, image: "MotivateImage2", date: ""),
+        Motivate(id: 2, favorite: false, image: "MotivateImage3", date: ""),
+        Motivate(id: 3, favorite: false, image: "MotivateImage4", date: ""),
+        Motivate(id: 4, favorite: false, image: "MotivateImage5", date: ""),
+        Motivate(id: 5, favorite: false, image: "MotivateImage6", date: ""),
+        Motivate(id: 6, favorite: false, image: "MotivateImage7", date: ""),
+        Motivate(id: 7, favorite: false, image: "MotivateImage8", date: ""),
+        Motivate(id: 8, favorite: false, image: "MotivateImage9", date: ""),
+        Motivate(id: 9, favorite: false, image: "MotivateImage10", date: ""),
     ]
     @Published var targets: Array<Target> = []
     @Published var labels: Array<Label> = [
