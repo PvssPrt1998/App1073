@@ -39,6 +39,7 @@ struct Settings: View {
                             .padding(.bottom, 10)
                     }
                 }
+                .padding(.top, 10)
             }
             .frame(maxHeight: .infinity, alignment: .bottom)
             .ignoresSafeArea()

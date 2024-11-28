@@ -47,6 +47,11 @@
 		99F4783F2CEC3C9400EF3732 /* AnalysisDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F4783E2CEC3C9400EF3732 /* AnalysisDetails.swift */; };
 		99F478462CEC48E200EF3732 /* ProfileCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F478442CEC48E200EF3732 /* ProfileCD+CoreDataClass.swift */; };
 		99F478472CEC48E200EF3732 /* ProfileCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F478452CEC48E200EF3732 /* ProfileCD+CoreDataProperties.swift */; };
+		99FAAE132CF89C6800D4826E /* MotivateMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FAAE122CF89C6800D4826E /* MotivateMainView.swift */; };
+		99FAAE182CF89D2D00D4826E /* IsMotivated+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FAAE142CF89D2D00D4826E /* IsMotivated+CoreDataClass.swift */; };
+		99FAAE192CF89D2D00D4826E /* IsMotivated+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FAAE152CF89D2D00D4826E /* IsMotivated+CoreDataProperties.swift */; };
+		99FAAE1A2CF89D2D00D4826E /* MotivateText+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FAAE162CF89D2D00D4826E /* MotivateText+CoreDataClass.swift */; };
+		99FAAE1B2CF89D2D00D4826E /* MotivateText+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FAAE172CF89D2D00D4826E /* MotivateText+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +96,11 @@
 		99F4783E2CEC3C9400EF3732 /* AnalysisDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisDetails.swift; sourceTree = "<group>"; };
 		99F478442CEC48E200EF3732 /* ProfileCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileCD+CoreDataClass.swift"; sourceTree = "<group>"; };
 		99F478452CEC48E200EF3732 /* ProfileCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99FAAE122CF89C6800D4826E /* MotivateMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivateMainView.swift; sourceTree = "<group>"; };
+		99FAAE142CF89D2D00D4826E /* IsMotivated+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IsMotivated+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99FAAE152CF89D2D00D4826E /* IsMotivated+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IsMotivated+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99FAAE162CF89D2D00D4826E /* MotivateText+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MotivateText+CoreDataClass.swift"; sourceTree = "<group>"; };
+		99FAAE172CF89D2D00D4826E /* MotivateText+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MotivateText+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +186,7 @@
 				99F478002CEB05C500EF3732 /* TextFieldCustom.swift */,
 				99F4780C2CEB16B800EF3732 /* RegisterLargeImageView.swift */,
 				99F478172CEB300900EF3732 /* TargetTextField.swift */,
+				99FAAE122CF89C6800D4826E /* MotivateMainView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -223,6 +234,10 @@
 		99F478232CEC1E2500EF3732 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				99FAAE142CF89D2D00D4826E /* IsMotivated+CoreDataClass.swift */,
+				99FAAE152CF89D2D00D4826E /* IsMotivated+CoreDataProperties.swift */,
+				99FAAE162CF89D2D00D4826E /* MotivateText+CoreDataClass.swift */,
+				99FAAE172CF89D2D00D4826E /* MotivateText+CoreDataProperties.swift */,
 				99F478442CEC48E200EF3732 /* ProfileCD+CoreDataClass.swift */,
 				99F478452CEC48E200EF3732 /* ProfileCD+CoreDataProperties.swift */,
 				99F478372CEC348000EF3732 /* MotivateCD+CoreDataClass.swift */,
@@ -332,6 +347,7 @@
 				99F478102CEB1B2400EF3732 /* CalendarView.swift in Sources */,
 				99F4780D2CEB16B800EF3732 /* RegisterLargeImageView.swift in Sources */,
 				99F478392CEC348000EF3732 /* MotivateCD+CoreDataClass.swift in Sources */,
+				99FAAE132CF89C6800D4826E /* MotivateMainView.swift in Sources */,
 				99F4783A2CEC348000EF3732 /* MotivateCD+CoreDataProperties.swift in Sources */,
 				99F478092CEB0BD100EF3732 /* Settings.swift in Sources */,
 				99F478012CEB05C500EF3732 /* TextFieldCustom.swift in Sources */,
@@ -345,6 +361,10 @@
 				99F478342CEC275500EF3732 /* QuotesView.swift in Sources */,
 				99F477E22CEAFB9A00EF3732 /* ContentView.swift in Sources */,
 				99F478362CEC304800EF3732 /* FavoriteQuotesView.swift in Sources */,
+				99FAAE182CF89D2D00D4826E /* IsMotivated+CoreDataClass.swift in Sources */,
+				99FAAE192CF89D2D00D4826E /* IsMotivated+CoreDataProperties.swift in Sources */,
+				99FAAE1A2CF89D2D00D4826E /* MotivateText+CoreDataClass.swift in Sources */,
+				99FAAE1B2CF89D2D00D4826E /* MotivateText+CoreDataProperties.swift in Sources */,
 				99F477F82CEAFF3500EF3732 /* Register1.swift in Sources */,
 				99F477EE2CEAFBF600EF3732 /* Splash.swift in Sources */,
 				99F4781C2CEB7A2500EF3732 /* AddLabelView.swift in Sources */,
@@ -498,18 +518,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1073/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "MotivateMe: Achieve Your Best";
+				INFOPLIST_KEY_CFBundleDisplayName = "KTOMe: Achieve Your Best";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dur.m0tm34ch13ve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -532,18 +552,18 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App1073/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "MotivateMe: Achieve Your Best";
+				INFOPLIST_KEY_CFBundleDisplayName = "KTOMe: Achieve Your Best";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dur.m0tm34ch13ve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -586,7 +606,6 @@
 				99F478212CEC168A00EF3732 /* DataModel.xcdatamodel */,
 			);
 			currentVersion = 99F478212CEC168A00EF3732 /* DataModel.xcdatamodel */;
-			name = DataModel.xcdatamodeld;
 			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

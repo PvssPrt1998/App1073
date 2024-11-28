@@ -3,6 +3,8 @@ import SwiftUI
 
 final class Source: ObservableObject {
     
+    @AppStorage("motivateDescription") var motivateDescription = ""
+    var show = false
     let dataManager = DataManager()
     
     @Published var profile: Profile?

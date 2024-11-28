@@ -17,6 +17,7 @@ struct Register: View {
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .ignoresSafeArea()
         .onAppear {
+            AppDelegate.orientationLock = .portrait
             UIScrollView.appearance().bounces = false
             UIScrollView.appearance().isScrollEnabled = false
         }

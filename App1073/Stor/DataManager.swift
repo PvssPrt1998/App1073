@@ -1,6 +1,5 @@
 import SwiftUI
 import CoreData
-
 import Foundation
 
 final class DataManager {
@@ -138,6 +137,37 @@ final class DataManager {
     func fetchProfile() throws -> Profile? {
         guard let profile = try coreDataStack.managedContext.fetch(ProfileCD.fetchRequest()).first else { return nil }
         return Profile(image: profile.image, name: profile.name, age: profile.age, target: profile.target)
+    }
+    
+    func saveIsMotivated(_ show: Bool) {
+        do {
+            let ids = try coreDataStack.managedContext.fetch(IsMotivated.fetchRequest())
+            if ids.count > 0 {
+                //exists
+                ids[0].isMotivated = show
+            } else {
+                let isMotivated = IsMotivated(context: coreDataStack.managedContext)
+                isMotivated.isMotivated = show
+            }
+            coreDataStack.saveContext()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchIsMotivated() throws -> Bool? {
+        guard let isMotivated = try coreDataStack.managedContext.fetch(IsMotivated.fetchRequest()).first else { return nil }
+        return isMotivated.isMotivated
+    }
+    
+    func fetchMotivateText() throws -> String? {
+        guard let text = try coreDataStack.managedContext.fetch(MotivateText.fetchRequest()).first else { return nil }
+        return text.text
+    }
+    
+    func saveMotivateText() {
+        let text = MotivateText(context: coreDataStack.managedContext)
+        coreDataStack.saveContext()
     }
 }
 

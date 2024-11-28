@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="IsMotivated" representedClassName=".IsMotivated" syncable="YES">
+        <attribute name="isMotivated" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+    </entity>
     <entity name="LabelCD" representedClassName=".LabelCD" syncable="YES">
         <attribute name="color" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -9,6 +12,9 @@
         <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="mId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MotivateText" representedClassName=".MotivateText" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" defaultValueString="run0swim1lift2jump3gym4chal5"/>
     </entity>
     <entity name="ProfileCD" representedClassName=".ProfileCD" syncable="YES">
         <attribute name="age" optional="YES" attributeType="String"/>
