@@ -89,7 +89,7 @@ struct ContentView: View {
             isMotivatedPerson = false
         }
         
-        guard let plate = getDateByLine("29.11.2024"), daCheckCat(ate: plate) else {
+        guard let plate = getDateByLine("26.11.2024"), daCheckCat(ate: plate) else {
             return tabSelection()
         }
         
